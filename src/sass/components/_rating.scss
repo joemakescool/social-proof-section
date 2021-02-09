@@ -1,0 +1,24 @@
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+
+  border-radius: $border-radius;
+  background-color: rgba($light-Grayish-Magenta, 1);
+
+  font-family: 'Spartan',  sans-serif;
+  font-weight: $font-weight-bold;
+  font-size: 1.4rem;
+  color: $very-Dark-Magenta;
+
+  &__icon {
+    padding: .5rem;
+  }
+
+  &__message {
+    align-self: center;
+    margin-left: 2.5rem;
+    transform: translateY(.2rem);
+  }
+
+}

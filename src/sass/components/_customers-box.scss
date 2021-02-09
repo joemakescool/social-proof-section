@@ -1,0 +1,17 @@
+.customers-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+
+  @for $i from 1 through 3 {
+    & > *:nth-child(#{$i}) {
+      transform: translateY(3rem * $i);
+    }
+  }
+
+}

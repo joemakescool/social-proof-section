@@ -1,0 +1,61 @@
+.customers-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1 1 30%;
+
+  padding: 5rem 3rem;
+
+  border-radius: $border-radius;
+  background-color: $very-Dark-Magenta;
+
+  &__message {
+    font-size: 1.2rem;
+    color: rgba($White, .7);
+  }
+
+}
+
+.customers-card__header-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  align-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+
+  &__picture {
+    shape-outside: circle(50%);
+  }
+
+  &__picture img {
+    filter: sepia(50%);
+    object-fit: cover;
+    height: 100%;
+    width: 4rem;
+    shape-outside: circle(50%);
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &__name {
+    font-family: 'Spartan', sans-serif;
+    font-weight: $font-weight-bold;
+    color: $White;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  &__buyer {
+    font-family: 'Spartan', sans-serif;
+    font-weight: $font-weight-light;
+    color: rgba($soft-pink, .6);
+    font-size: 1.2rem;
+  }
+
+
+
+}
+
+

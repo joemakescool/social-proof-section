@@ -1,0 +1,26 @@
+.header-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 75%;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+
+  .header-box__title {
+    font-weight: $font-weight-bold;
+    font-size: 5rem;
+    color: $very-Dark-Magenta;
+    font-family: 'Spartan', sans-serif;
+    margin-bottom: 1rem;
+
+  }
+
+  .header-box__sub-title {
+    font-weight: $font-weight-light;
+    font-size: 1.5rem;
+    color: $dark-Grayish-Magenta;
+
+  }
+}
