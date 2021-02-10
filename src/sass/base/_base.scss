@@ -16,9 +16,10 @@ body {
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
   font-weight: 500;
-  position: relative;
+
   height: 100vh;
   width: 100vw;
+  background-color: $White;
 
   background-image: url("./assets/images/bg-pattern-top-desktop.svg"),
                     url("./assets/images/bg-pattern-bottom-desktop.svg")
@@ -27,17 +28,25 @@ body {
   background-repeat: no-repeat;
   background-size: max(75%, 40rem), max(25%, 40rem);
 
+  @include respond(tab-port) {
+
+    height: 100%;
+    width: 100%;
+
+  }
+
 }
 
 
 .attribution {
+
   font-size: 1.1rem;
-  text-align: center;
+  display: inline-block;
   color: rgba($very-Dark-Magenta, .5);
-  position: absolute;
   margin: 1rem;
-  bottom: 0;
-  right: 0;
+  text-align: center;
+
+
 }
 
 .attribution a {

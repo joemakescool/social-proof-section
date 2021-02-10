@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app" id="app">
     <router-view/>
     <TheAttribution></TheAttribution>
   </div>
@@ -18,16 +18,8 @@ export default {
 <style lang="scss">
 @import "sass/main";
 
-#nav {
-  padding: 30px;
+.app {
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
+
 </style>

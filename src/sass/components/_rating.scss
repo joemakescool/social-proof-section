@@ -11,6 +11,11 @@
   font-size: 1.4rem;
   color: $very-Dark-Magenta;
 
+  &__img--box {
+    display: flex;
+    align-content: center;
+  }
+
   &__icon {
     padding: .5rem;
   }
@@ -19,6 +24,28 @@
     align-self: center;
     margin-left: 2.5rem;
     transform: translateY(.2rem);
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
+  }
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+
+    & > *:nth-child(1) {
+      transform: translateX(0);
+    }
+
+    & > *:nth-child(2) {
+      transform: translateX(0);
+    }
   }
 
 }

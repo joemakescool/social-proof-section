@@ -15,12 +15,27 @@
     font-family: 'Spartan', sans-serif;
     margin-bottom: 1rem;
 
+    @include respond(tab-port) {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      font-size: 3rem;
+    }
+
   }
 
   .header-box__sub-title {
     font-weight: $font-weight-light;
     font-size: 1.5rem;
     color: $dark-Grayish-Magenta;
+
+    @include respond(tab-port) {
+      text-align: center;
+      font-size: 1.2rem;
+    }
 
   }
 }

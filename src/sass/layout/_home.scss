@@ -1,7 +1,6 @@
 .home {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   padding: 10rem;
 
 
@@ -9,5 +8,16 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
   gap: 3rem;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+
+
+  }
 
 }
