@@ -1,4 +1,5 @@
 .customers-card {
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -17,12 +18,12 @@
   @include respond(tab-port) {
     flex: 1 1 auto;
     padding: 3.5rem 1.5rem;
-
   }
 
 }
 
 .customers-card__header-box {
+
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100%;
@@ -59,8 +60,6 @@
     color: rgba($soft-pink, .6);
     font-size: 1.2rem;
   }
-
-
 
 }
 
